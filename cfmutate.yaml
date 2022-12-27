@@ -1,0 +1,21 @@
+kind: MutatingWebhookConfiguration
+apiVersion: admissionregistration.k8s.io/v1
+metadata:
+  name: mutating-webhook
+webhooks:
+  - name: webhook.webhook.svc
+    rules:
+      - operations: ["CREATE"]
+        apiGroups: ["*"]
+        apiVersions: ["*"]
+        resources: ["namespaces"]
+    sideEffects: None
+    reinvocationPolicy: Never
+    failurePolicy: Ignore
+    admissionReviewVersions: ["v1"]
+    clientConfig:
+      url: <Your Cloud Function URL (including full path) goes here> 
+      service:
+        namespace: webhook
+        name: webhook
+        path: /mutate
