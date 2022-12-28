@@ -1,6 +1,6 @@
 # gke-security-webhook
 This repo contains a Mutating Webhook app that automatically inserts pod security policies for new namespaces. 
-This app was tested against GKE version 1.23 and GCP Cloud Function, but can easily be adapated for use on AWS Lambda.
+This app was tested against GKE version 1.23 and GCP Cloud Function version 1, but can easily be adapated for use on AWS Lambda.
 
 # Requirements
 1) GKE cluster version 1.23+
