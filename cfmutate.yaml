@@ -15,7 +15,3 @@ webhooks:
     admissionReviewVersions: ["v1"]
     clientConfig:
       url: <Your Cloud Function URL (including full path) goes here> 
-      service:
-        namespace: webhook
-        name: webhook
-        path: /mutate
