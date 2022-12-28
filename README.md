@@ -25,3 +25,8 @@ You can optionally create a GitOps flow to automatically pick up any changes to 
    - Service Account User
    
 Create a trigger event for the Cloud Build job and point it to this repo or a cloned private copy of this repo. 
+
+# References:
+Visit my blog for a detailed overview of why and how this project was created: 
+https://sshafiullah.wixsite.com/blog/post/applying-pod-security-admissions-policies-on-gke-clusters
+https://sshafiullah.wixsite.com/blog/post/kubernetes-webhooks
